@@ -2,8 +2,9 @@
 import './App.css'
 import HeroSection from './components/HeroSection'
 import Navbar from './components/Navbar'
-import heroImage4 from './assets/heroImage4.png'
+// import heroImage4 from './assets/heroImage4.png'
 import arrowRight from './assets/arrowRight.png'
+import Image1 from '../src/my image.png'
 
 function App() {
   const userName = "SHARIK"
@@ -13,7 +14,7 @@ function App() {
     <>
       
      <Navbar />
-     <HeroSection imageProp={heroImage4}
+     <HeroSection imageProp={Image1}
      imageIcon={arrowRight} 
      Line1="Frontend Developer passionate about building modern,"
      Line2="responsive, and user-friendly websites using"

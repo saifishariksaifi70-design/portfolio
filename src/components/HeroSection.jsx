@@ -19,7 +19,7 @@ const HeroSection = ({imageProp , Line1 , Line2 ,Line3 ,imageIcon}) => {
       <div className="absolute inset-0 -z-10 flex items-center justify-center">
       <div className="w-80 h-80 bg-blue-500/30 blur-[120px] rounded-full"></div>
     </div>
-        <img src={imageProp} alt="" className='w-[450px] h-[550px] object-cover mt-10 drop-shadow-2xl
+        <img src={imageProp} alt="" className='w-[450px] h-[550px] object-cover mt-10 drop-shadow-2xl rounded-full
     hover:scale-105
     transition-all
     duration-500'/>
