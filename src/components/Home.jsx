@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const HeroSection = ({imageProp , Line1 , Line2 ,Line3 ,imageIcon}) => {
   return (
-  <section className='min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950 text-white flex items-center
+  <section className='min-h-[625px] bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950 text-white flex items-center
   justify-between px-20 flex-col sm:flex-row md:flex-row'>
     <div className='mt-16 items-center'>
        <h1 className='text-[20px] mt-16'> I'M <br/>
@@ -21,7 +21,8 @@ const HeroSection = ({imageProp , Line1 , Line2 ,Line3 ,imageIcon}) => {
       <div className="absolute inset-0 -z-10 flex items-center justify-center">
       <div className="w-80 h-80 bg-blue-500/30 blur-[120px] rounded-full"></div>
     </div>
-        <img src={imageProp} alt="" className='w-[450px] h-[550px] object-cover mt-10 drop-shadow-2xl rounded-full
+        <img src={imageProp} alt="" className='w-[400px] h-[450px] object-cover mt-10 ml-32 drop-shadow-2xl
+        rounded-3xl shadow-2xl shadow-sky-300 
     
     hover:scale-105
     transition-all
