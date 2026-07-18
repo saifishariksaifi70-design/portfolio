@@ -5,9 +5,8 @@ import Resume2 from '../../../public/Sharik_Saifi_Resume.pdf'
 
 const About = () => {
   return (
-    <div className='flex from-slate-950 bg-slate-900 to-blue-950 min-h-screen py-20 '>
-    <div className='flex justify-center items-center gap-10 md:gap-16 max-w-full max-h-screen
-    mx-5 md:mx-16 ml-0 md:ml-32 flex flex col md:flex-row'>
+    <div className="flex items-center justify-center min-h-screen py-20 bg-gradient-to-r from-slate-950 via-slate-900 to-blue-950">
+  <div className="flex flex-col md:flex-row justify-center items-center gap-10 md:gap-16 max-w-full mx-5 md:mx-16">
       <div className='w-full relative object-cover mt-10 drop-shadow-2xl rounded-full shadow-sky-300
       mx-5 md:mx-16 ml-0 md:ml-32 items-center justify-center 
       
