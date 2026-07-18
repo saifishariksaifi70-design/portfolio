@@ -1,34 +1,36 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const HeroSection = ({imageProp , Line1 , Line2 ,Line3 ,imageIcon}) => {
+const HeroSection = ({ imageProp, Line1, Line2, Line3, imageIcon }) => {
   return (
-  <section className='min-h-[625px] bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950 text-white flex items-center
-  justify-between px-20 flex-col sm:flex-row md:flex-row'>
-    <div className='mt-16 items-center'>
-       <h1 className='text-[20px] mt-16'> I'M <br/>
-        <span className='text-5xl font-bold'>SHARIK</span><br/>
-       <span className='text-7xl font-bold text-sky-600'>DEVELOPER</span>
-       </h1><br />
-       <p>{Line1}</p>
-       <p>{Line2}</p>
-       <p>{Line3}</p><br /><hr className='text-yellow-500' /><br />
-       <button className='bg-white border w-[100px] flex justify-center mt-8 px-8 py-3 border border-amber-500 rounded-lg hover: text-black transition'>
-       <Link to="/About"> view </Link> <img src={imageIcon} alt="" />
-       </button>
-    </div>
-    <div className='relative'>
-      <div className="absolute inset-0 -z-10 flex items-center justify-center">
-      <div className="w-80 h-80 bg-blue-500/30 blur-[120px] rounded-full"></div>
-    </div>
-        <img src={imageProp} alt="" className='w-[400px] h-[450px] object-cover mt-10 ml-32 drop-shadow-2xl
+    <section className='min-h-[625px] bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950 text-white flex items-center
+  justify-between md:justify-center gap-10 px-5 md:px-20 flex-col sm:flex-row md:flex-row'>
+      <div className='mt-8 md:mt-16 text-center md:text-left'>
+        <h1 className='text-[20px] mt-16'> I'M <br />
+          <span className='text-4xl md:text-5xl font-bold'>SHARIK</span><br />
+          <span className='text-5xl md:text-7xl font-bold text-sky-600'>DEVELOPER</span>
+        </h1><br />
+        <p>{Line1}</p>
+        <p>{Line2}</p>
+        <p>{Line3}</p><br /><hr className='text-yellow-500' /><br />
+        <button className='bg-white border w-[100px] flex justify-center mt-8 px-8 py-3 border border-amber-500 rounded-lg hover: text-black transition'>
+          <Link to="/About"> view </Link> <img src={imageIcon} alt="" />
+        </button>
+      </div>
+      <div className='relative'>
+        <div className="absolute inset-0 -z-10 flex items-center justify-center">
+          <div className="w-80 h-80 bg-blue-500/30 blur-[120px] rounded-full"></div>
+        </div>
+        <img src={imageProp} alt="" className='w-64 h-72
+        sm:w-80 sm:h-96
+        md:w-[400px] md:h-[450px] object-cover mt-10 ml-0 md:ml-32 drop-shadow-2xl
         rounded-3xl shadow-2xl shadow-sky-300 
     
     hover:scale-105
     transition-all
     duration-500'/>
-    </div>
-  </section>
+      </div>
+    </section>
   )
 }
 
