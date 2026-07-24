@@ -9,7 +9,7 @@ const Navbar = (props) => {
     const [menuOpen , setMenuOpen ] = useState(false);
   return (
     <div className='text-2xl p-5 items-center w-full z-50  from-slate-950 bg-slate-900 to-blue-950 backdrop-blur-md border-b border-slate-800'>
-        <nav className='flex justify-around gap-10 items-center h-[30px]'>
+        <nav className='flex justify-around gap-10 items-center h-[30px] '>
             <h1 className='text-5xl font-bold flex gap-2 items-center text-sky-600'>
                 <Link to="/">S.</Link>
                 <img src="https://img.icons8.com/?size=96&id=nqg2tDAxO1LG&format=gif&color=f7f7f7" alt=""  className='w-[50px] h-[50px]'/>
