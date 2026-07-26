@@ -5,7 +5,7 @@ import Navbar from './components/Navbar'
 // import heroImage4 from './assets/heroImage4.png'
 import arrowRight from './assets/arrowRight.png'
 import Image1 from '../src/my image.png'
-import {BrowserRouter, Routes, Route} from 'react-router-dom'
+// import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import About from './components/Routers/About'
 import Skills from './components/Routers/Skills'
 import Contact from './components/Routers/Contact'
@@ -16,22 +16,41 @@ function App() {
 
   return (
     <>
-     <BrowserRouter> 
-     <Navbar />
-     <Routes>
-     <Route path='/' element={
+     {/* <BrowserRouter>  */}
+     {/* <Navbar /> */}
+     {/* <Routes> */}
+     {/* <Route path='/' element={
       <Home imageProp={Image1}
      imageIcon={arrowRight} 
      Line1="Frontend Developer passionate about building modern,"
      Line2="responsive, and user-friendly websites using"
      Line3="React.js, JavaScript, and Tailwind CSS."
      />
-     }/>
-     <Route path='/About' element={<About/>}/>
+     }/> */}
+     {/* <Route path='/About' element={<About/>}/>
      <Route path='/Skills'element={<Skills/>}/>
-     <Route path='/Contact' element={<Contact/>}/>
-     </Routes>
-     </BrowserRouter>
+     <Route path='/Contact' element={<Contact/>}/> */}
+     {/* </Routes>
+     </BrowserRouter> */}
+     <Navbar />
+
+     <section id="Home">
+      <Home imageProp={Image1}
+     imageIcon={arrowRight} 
+     Line1="Frontend Developer passionate about building modern,"
+     Line2="responsive, and user-friendly websites using"
+     Line3="React.js, JavaScript, and Tailwind CSS."
+     />
+     </section>
+     <section id='About'>
+      <About />
+     </section>
+     <section id='Skills'>
+        <Skills />
+     </section>
+     <section>
+      <Contact />
+     </section>
     </>
   )
 }

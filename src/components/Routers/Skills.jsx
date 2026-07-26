@@ -25,8 +25,8 @@ const Skills = () => {
       
       <div className='flex justify-center items-center mt-10 gap-5 flex flex-col md:flex-row'>
         
-      <div className='border w-2xs h-72 object-cover md:ml-32 
-      drop-shadow-2xl bg-blue-900/20 gap-5
+      <div className='border border-blue-950 w-2xs h-72 object-cover md:ml-32 
+      drop-shadow-2xl gap-5
         rounded-3xl hover:
         hover:scale-105
     transition-all
@@ -41,8 +41,8 @@ const Skills = () => {
           <li>Bootstrap</li>
       </ul>
       </div>
-      <div className='border w-2xs h-60 border w-2xs h-72 object-cover md:ml-32 
-      drop-shadow-2xl bg-blue-900/20
+      <div className='border border-blue-950 w-2xs h-60 border w-2xs h-72 object-cover md:ml-32 
+      drop-shadow-2xl 
         rounded-3xl hover:
         hover:scale-105
     transition-all
@@ -56,8 +56,8 @@ const Skills = () => {
           <li>MongoDB</li>
       </ul>
       </div>
-      <div className='border w-2xs h-60 border w-2xs h-72 object-cover md:ml-32 
-      drop-shadow-2xl bg-blue-900/20
+      <div className='border border-blue-950 w-2xs h-60 border w-2xs h-72 object-cover md:ml-32 
+      drop-shadow-2xl 
         rounded-3xl hover:
         hover:scale-105
     transition-all
