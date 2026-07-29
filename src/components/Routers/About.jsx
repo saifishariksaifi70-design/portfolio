@@ -23,10 +23,11 @@ const About = () => {
       <h1 className='text-4xl text-center font-bold'>About 
         <span className='text-sky-500'> Me.</span></h1><br /><br />
         <div className='flex gap-8 h-scr flex-col lg:flex-row items-center justify-center'>
-        <div className="mx-16 px-3 py-3 relative max-w-80 justify-center items-center border-2 border-gray-900 rounded-2xl">
+        <div className="mx-16 px-3 py-3 relative max-w-80 justify-center items-center border-2 border-gray-900 rounded-2xl
+        flex-col md:flex-row">
 
   {/* Blue Glow Circle */}
-  <div className="absolute w-72 h-72 rounded-full border-4 border-blue-500 shadow-[0_0_60px_#3b82f6]"></div>
+  <div className="absolute w-72 h-72 items-center justify-center rounded-full border-4 border-blue-500 shadow-[0_0_60px_#3b82f6]"></div>
 
   {/* Blur Glow */}
   <div className="absolute w-80 h-80 rounded-full bg-blue-500/20 blur-3xl"></div>

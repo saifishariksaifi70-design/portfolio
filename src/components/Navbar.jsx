@@ -30,6 +30,10 @@ const Navbar = (props) => {
                     </li>
                     <li className='hover:text-sky-500 cursor-pointe text-2xlr'>
                         {/* <Link to="/Contact">Contact</Link> */}
+                        <a href="#Projects">Projects</a>
+                    </li>
+                     <li className='hover:text-sky-500 cursor-pointe text-2xlr'>
+                        {/* <Link to="/Contact">Contact</Link> */}
                         <a href="#Contact">Conatct</a>
                     </li>
                 </ul>
@@ -55,6 +59,10 @@ const Navbar = (props) => {
                     <li className='hover:text-sky-500 cursor-pointer'>
                         {/* <Link to="/Skills">Skills</Link> */}
                         <a href="#Skills">Skills</a>
+                    </li>
+                    <li className='hover:text-sky-500 cursor-pointer'>
+                        {/* <Link to="/Contact">Contact</Link> */}
+                        <a href="#Projects">Projects</a>
                     </li>
                     <li className='hover:text-sky-500 cursor-pointer'>
                         {/* <Link to="/Contact">Contact</Link> */}

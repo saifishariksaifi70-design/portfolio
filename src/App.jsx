@@ -9,6 +9,7 @@ import Image1 from '../src/my image.png'
 import About from './components/Routers/About'
 import Skills from './components/Routers/Skills'
 import Contact from './components/Routers/Contact'
+import Projects from './components/Routers/Projects'
 
 function App() {
   const userName = "SHARIK"
@@ -48,9 +49,13 @@ function App() {
      <section id='Skills'>
         <Skills />
      </section>
-     <section>
+      <section id='Projects'>
+      <Projects />
+     </section>
+     <section id='Contact'>
       <Contact />
      </section>
+    
     </>
   )
 }

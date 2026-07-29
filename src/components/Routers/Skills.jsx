@@ -14,6 +14,7 @@ import API from '../../assets/api.png'
 import git from '../../assets/github.png'
 import Code from '../../assets/vs-code.png'
 import Vercel from '../../assets/vercel.png'
+import Script from '../../assets/JavaScript.png'
 
 const Skills = () => {
   const [active, setActive] = useState("frontend");
@@ -23,21 +24,30 @@ const Skills = () => {
     <div className='min-h-screen py-16 bg-gradient-to-br from-slate-950 bg-slate-900 to-blue-950 items-center'>
       
       
-      <div className='flex justify-center items-center mt-10 gap-5 flex flex-col md:flex-row'>
+      <div className='flex justify-center items-center mt-10 gap-5 flex-col md:flex-row'>
         
-      <div className='border border-blue-950 w-2xs h-72 object-cover md:ml-32 
+      <div className='justify-center border border-blue-950 w-2xs object-cover md:ml-32 
       drop-shadow-2xl gap-5
         rounded-3xl hover:
         hover:scale-105
     transition-all
     duration-500'>
         <ul className='list-disc list-inside text-sky-400 m-5 text-white items-center'>
-          <h1 className='text-2xl font-bold flex gap-1'>
-            <img src={Frontend} alt="" />Frontend Development</h1><br />
-          <li>HTML/CSS3</li>
-          <li>JavaScript(ES6+)</li>
-          <li>React.js</li>
-          <li>Tailwind CSS</li>
+          
+          <h1 className='text-2xl font-bold flex gap-1 
+          text-gray-300 items-center'>
+            <img src={Frontend} alt="" />
+            <span className='gap-5'>Frontend <hr className='text-sky-400' /></span>
+            </h1>
+            <br />
+          <li className='flex items-center gap-3'>
+            <img src={html} alt="" className='w-8 h-8' />HTML/CSS3</li>
+          <li className='flex items-center gap-3'>
+            <img src={Script} alt="" className='w-8 h-8' />JavaScript(ES6+)</li>
+          <li className='flex items-center gap-3'>
+            <img src={reactImage} alt="" className='w-8 h-8' />React.js</li>
+          <li className='flex items-center gap-3'>
+            <img src={tailwind} alt="" className='w-8 h-8' />Tailwind CSS</li>
           <li>Bootstrap</li>
       </ul>
       </div>
@@ -48,12 +58,17 @@ const Skills = () => {
     transition-all
     duration-500'>
         <ul className='list-disc list-inside text-sky-400  m-5 text-white items-center'>
-          <h1 className='text-2xl font-bold flex gap-2'>
-            <img src={Backend} alt="" />Backend Development</h1> <br />
-          <li>NODE.JS</li>
-          <li>EXPRESS.JS</li>
-          <li>API'S</li>
-          <li>MongoDB</li>
+          <h1 className='text-2xl font-bold flex gap-2 items-center'>
+            <img src={Backend} alt="" /><span>Backend<hr className='text-sky-300' /></span>
+            </h1> <br />
+          <li className='flex gap-3 items-center'>
+            <img src={Node} alt="" className='w-8 h-8' />NODE.JS</li>
+          <li className='flex items-center gap-3'>
+            <img src={Express} alt="" className='w-8 h-8' />EXPRESS.JS</li>
+          <li className='flex items-center gap-3'>
+            <img src={API} alt="" className='w-8 h-8' />API'S</li>
+          <li className='flex items-center gap-3'> 
+            <img src={MongoDB} alt="" className='w-8 h-8' />MongoDB</li>
       </ul>
       </div>
       <div className='border border-blue-950 w-2xs h-60 border w-2xs h-72 object-cover md:ml-32 
@@ -62,12 +77,15 @@ const Skills = () => {
         hover:scale-105
     transition-all
     duration-500'>
-        <ul className='list-disc list-inside text-sky-400  m-5 text-white items-center'>
-          <h1 className='text-2xl font-bold flex gap-1'>
-            <img src={Tool} alt="" />Tool'S & Platfroms</h1> <br />
-          <li>Git/GitHub</li>
-          <li>Vercel Deployment</li>
-          <li>VS Code</li>
+        <ul className='list-disc gap-3 list-inside text-sky-400  m-5 text-white items-center'>
+          <h1 className='text-2xl font-bold flex gap-2 items-center'>
+            <img src={Tool} alt="" className='w-12 h-12' /><span>Tool'S <hr className='text-sky-400' /></span></h1> <br />
+          <li className='flex items-center gap-3'>
+            <img src={git} alt="" className='w-8 h-8' />Git/GitHub</li>
+          <li className='flex items-center gap-3'>
+            <img src={Vercel} alt="" className='w-8 h-8' />Vercel</li>
+          <li className='flex items-center gap-3'>
+            <img src={Code} alt="" className='w-8 h-8' />VS Code</li>
           
       </ul>
       </div>
