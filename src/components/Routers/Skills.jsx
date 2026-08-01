@@ -1,4 +1,4 @@
-import React  from 'react'
+import React, { useEffect }  from 'react'
 import Frontend from '../../../public/Frontend.png'
 import Backend from '../../../src/assets/Backend.png'
 import Tool from '../../../src/assets/Tools.png'
@@ -15,13 +15,26 @@ import git from '../../assets/github.png'
 import Code from '../../assets/vs-code.png'
 import Vercel from '../../assets/vercel.png'
 import Script from '../../assets/JavaScript.png'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const Skills = () => {
   const [active, setActive] = useState("frontend");
+  useEffect(()=>{
+    AOS.init({
+      duration : 1000,
+      once : false
+    })
+  },[])
   
   return (
     
-    <div className='min-h-screen py-16 bg-gradient-to-br from-slate-950 bg-slate-900 to-blue-950 items-center'>
+    <div className='min-h-screen py-16 bg-gradient-to-br from-slate-950 bg-slate-900 to-blue-950 items-center' data-aos="flip-left">
+       <div className='flex gap-32 items-center justify-center'>
+        <hr className='text-blue-900 w-2xs' />
+        <h1 className='text-5xl font-bold bg-gradient-to-r from-sky-400 to-blue-600 bg-clip-text text-transparent '>Skills</h1>
+        <hr className='text-blue-900 w-2xs'/>
+      </div><br />
       
       
       <div className='flex justify-center items-center mt-10 gap-5 flex-col md:flex-row'>
@@ -92,14 +105,10 @@ const Skills = () => {
       
       </div>
       <br /><br /><br />
-      <div className='flex gap-32 items-center justify-center'>
-        <hr className='text-gray-500 w-2xs' />
-        <h1 className='text-5xl text-gray-500 font-bold'>Skills</h1>
-        <hr className='text-gray-500 w-2xs'/>
-      </div><br />
+     
       <div className='flex justify-center items-center gap-5 flex flex-col md:flex-row'>
-        <button className='border-2 rounded-2xl w-32 h-10 
-        bg-gradient-to-r from-blue-300 to-gray-500
+        <button className='border-b-2 rounded-2xl w-32 h-10 
+        text-white font-bold
         hover:scale-105
     transition-all
     duration-500
@@ -107,16 +116,16 @@ const Skills = () => {
         >
           <span className='text-black-500'>Frontend</span>
           </button>
-        <button className='border-2 rounded-2xl w-32 h-10
-        bg-gradient-to-r from-blue-300 to-gray-500
+        <button className='border-b-2 rounded-2xl w-32 h-10
+        text-white font-bold 
         hover:scale-105
     transition-all
     duration-500
         'onClick={() => setActive("backend")}>
           <span className='text-black-500'>Backend</span>
           </button>
-        <button className='border-2 rounded-2xl w-32 h-10
-        bg-gradient-to-r from-blue-300 to-gray-500
+        <button className='border-b-2 rounded-2xl w-32 h-10
+        text-white font-bold
         hover:scale-105
     transition-all
     duration-500

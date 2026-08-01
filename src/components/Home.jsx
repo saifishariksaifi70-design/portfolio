@@ -27,10 +27,10 @@ const Home = ({ Line1, Line2, Line3, imageIcon }) => {
         <h1 className='text-2xl mt-16 text-white'
         
         >Hi, I'M <br />
-          <h1 className='text-6xl md:text-7xl font-bold text-white'>Sharik
+          <span className='text-6xl md:text-7xl font-bold text-white'>Sharik
           <span className='text-6xl font-bold 
           bg-gradient-to-r from-blue-500 to-blue-900 bg-clip-text text-transparent
-          '> Saifi</span></h1>
+          '> Saifi</span></span>
         </h1>
         <div className='flex gap-3 items-center py-3 flex flex-col md:flex-row '>
           <h1 className='text-2xl bg-gradient-to-r from-blue-500 to-blue-900 bg-clip-text text-transparent'>MERN Stack</h1>

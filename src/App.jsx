@@ -10,6 +10,7 @@ import About from './components/Routers/About'
 import Skills from './components/Routers/Skills'
 import Contact from './components/Routers/Contact'
 import Projects from './components/Routers/Projects'
+import Footer from './components/Footer'
 
 function App() {
   const userName = "SHARIK"
@@ -55,6 +56,8 @@ function App() {
      <section id='Contact'>
       <Contact />
      </section>
+
+     <Footer />
     
     </>
   )

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import image2 from '../../../src/my image.png'
 // import { Link } from 'react-router-dom'
 import Resume2 from '../../assets/Sharik_Saifi_Resume.pdf'
@@ -14,17 +14,28 @@ import Goal from '../../assets/goal.png'
 import Responsive from '../../assets/responsive.png'
 import Performance from '../../assets/rocket.png'
 import Problem from '../../assets/light.png'
+import { motion } from 'framer-motion'
+import { MdOpacity } from 'react-icons/md'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const About = () => {
+
+  useEffect(()=>{
+    AOS.init({
+      duration : 1000,
+      once : false
+    })
+  },[])
   return (
-    <div className='py-10 bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950 text-white'>
+    <div className='py-10 bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950 text-white' data-aos="zoom-in">
       <br />
       <h3 className='text-center text-sky-600 text-2xl'>Get To Know me</h3>
       <h1 className='text-4xl text-center font-bold'>About 
         <span className='text-sky-500'> Me.</span></h1><br /><br />
         <div className='flex gap-8 h-scr flex-col lg:flex-row items-center justify-center'>
         <div className="mx-16 px-3 py-3 relative max-w-80 justify-center items-center border-2 border-gray-900 rounded-2xl
-        flex-col md:flex-row">
+        flex-col md:flex-row sm:flex-row">
 
   {/* Blue Glow Circle */}
   <div className="absolute w-72 h-72 items-center justify-center rounded-full border-4 border-blue-500 shadow-[0_0_60px_#3b82f6]"></div>
@@ -33,10 +44,15 @@ const About = () => {
   <div className="absolute w-80 h-80 rounded-full bg-blue-500/20 blur-3xl"></div>
 
   {/* Profile Image */}
-  <img
+  <motion.img
     src={About1}
     alt=""
     className="relative z-10 w-72"
+    initial={{ opacity : 0, x : -100}}
+    whileInView={{ opacity : 1 , x : 0 }}
+    transition={{duration : 0.8}}
+    viewport={{ once : false}}
+
   />
 
 
@@ -107,13 +123,21 @@ const About = () => {
 
     </div>
     <div className="border-r-2 border-gray-800 h-80"></div>
-    <div className='gap-5 w-60'>
-       <div className='flex gap-5'>
+    <motion.div className='gap-5 w-60'
+    initial={{MdOpacity : 0 , x : 100}}
+    whileInView={{MdOpacity : 1 , x : 0}}
+    transition={{duration : 0.8}}
+    viewPort={{ once : false}}>
+       <div className='flex gap-5'
+       >
        <img src={Goal} alt="" className='w-8 h-8' />
-        <div>
+        <motion.div 
+        initial={{ x : -100}}
+    animate={{ x : 0}}
+    transition={{duration : 1}}>
           <h1 className='font-bold'>Clean Code</h1>
           <p>I write clean, readable and efficient code.</p>        
-      </div>
+      </motion.div>
       </div><br />
     <div className='flex gap-5'>
         <img src={Responsive} alt="" className='w-8 h-8' />
@@ -137,7 +161,7 @@ const About = () => {
       </div>
       </div><br />
      
-      </div>
+      </motion.div>
 
   </div>
   </div>
