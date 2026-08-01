@@ -52,7 +52,7 @@ const Home = ({ Line1, Line2, Line3, imageIcon }) => {
         hover: transition-all
          scale-105
          '>
-          <a href="#Project" className='flex items-center gap-1 font-bold'>View Project <img src={imageIcon} alt="" className='w-8 h-8' />
+          <a href="#Projectsd" className='flex items-center gap-1 font-bold'>View Project <img src={imageIcon} alt="" className='w-8 h-8' />
           </a>
         </button>
         <button className='flex mt-8 px-4 py-2 border-2 rounded-2xl border-blue-900

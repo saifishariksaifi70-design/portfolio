@@ -3,12 +3,13 @@ import { useState } from 'react'
 // import { Link } from 'react-router-dom';
 import { Menu, X } from "lucide-react";
 import Resume from '../assets/Sharik_Saifi_Resume.pdf'
+import { FaDownload } from 'react-icons/fa';
 
 
 const Navbar = (props) => {
     const [menuOpen , setMenuOpen ] = useState(false);
   return (
-    <div className='text-2xl p-5 items-center w-full z-50  from-slate-950 bg-slate-900 to-blue-950 backdrop-blur-md border-b border-slate-800'>
+    <div className='text-xl p-5 items-center w-full z-50  from-slate-950 bg-slate-900 to-blue-950 backdrop-blur-md border-b border-slate-800'>
         <nav className='flex justify-around gap-10 items-center h-5 '>
             <h1 className='text-5xl font-bold flex gap-2 items-center text-sky-600'>
                 {/* <Link to="/">S.</Link> */}
@@ -70,6 +71,12 @@ const Navbar = (props) => {
                     </li>
                 </ul>
             )}
+            <a href={Resume} target="_blank" rel="noopener noreferrer">
+            <button className='flex items-center gap-2 border border-white px-2 rounded-md py-1 cursor-pointer'>
+               <h1 className='text-white/80'> Download CV</h1>
+               <FaDownload size={20} className='text-white/40'/>
+            </button>
+            </a>
             
         </nav>
     </div>

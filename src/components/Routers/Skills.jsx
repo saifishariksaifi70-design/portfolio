@@ -29,7 +29,7 @@ const Skills = () => {
   
   return (
     
-    <div className='min-h-screen py-16 bg-gradient-to-br from-slate-950 bg-slate-900 to-blue-950 items-center' data-aos="flip-left">
+    <div className='min-h-screen py-16 bg-gradient-to-br from-slate-950 bg-slate-900 to-blue-950 items-center' data-aos="zoom-out">
        <div className='flex gap-32 items-center justify-center'>
         <hr className='text-blue-900 w-2xs' />
         <h1 className='text-5xl font-bold bg-gradient-to-r from-sky-400 to-blue-600 bg-clip-text text-transparent '>Skills</h1>
