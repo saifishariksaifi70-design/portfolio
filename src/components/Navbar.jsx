@@ -72,7 +72,7 @@ const Navbar = (props) => {
                 </ul>
             )}
             <a href={Resume} target="_blank" rel="noopener noreferrer">
-            <button className='flex items-center gap-2 border border-white px-2 rounded-md py-1 cursor-pointer'>
+            <button className='flex items-center gap-1 border border-white px-1 rounded-md py-1 cursor-pointer'>
                <h1 className='text-white/80'> Download CV</h1>
                <FaDownload size={20} className='text-white/40'/>
             </button>
