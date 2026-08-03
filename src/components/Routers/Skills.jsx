@@ -14,7 +14,7 @@ import API from '../../assets/api.png'
 import git from '../../assets/github.png'
 import Code from '../../assets/vs-code.png'
 import Vercel from '../../assets/vercel.png'
-import Script from '../../assets/JavaScript.png'
+import Script from '../../assets/javaScript.png'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
