@@ -4,3 +4,7 @@
     @apply scroll-smooth;
   }
 }
+html,
+body {
+    overflow-x: hidden;
+}

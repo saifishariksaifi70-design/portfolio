@@ -38,10 +38,10 @@ const About = () => {
         flex-col md:flex-row sm:flex-row">
 
   {/* Blue Glow Circle */}
-  <div className="absolute w-72 h-72 items-center justify-center rounded-full border-4 border-blue-500 shadow-[0_0_60px_#3b82f6]"></div>
+  <div className="absolute w-72 h-72 sm:h-60 sm:w-60 items-center justify-center rounded-full border-4 border-blue-500 shadow-[0_0_60px_#3b82f6]"></div>
 
   {/* Blur Glow */}
-  <div className="absolute w-80 h-80 rounded-full bg-blue-500/20 blur-3xl"></div>
+  <div className="absolute w-80 h-80 sm:w-72 sm:h-72 rounded-full bg-blue-500/20 blur-3xl"></div>
 
   {/* Profile Image */}
   <motion.img
