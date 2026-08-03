@@ -18,22 +18,6 @@ function App() {
 
   return (
     <>
-     {/* <BrowserRouter>  */}
-     {/* <Navbar /> */}
-     {/* <Routes> */}
-     {/* <Route path='/' element={
-      <Home imageProp={Image1}
-     imageIcon={arrowRight} 
-     Line1="Frontend Developer passionate about building modern,"
-     Line2="responsive, and user-friendly websites using"
-     Line3="React.js, JavaScript, and Tailwind CSS."
-     />
-     }/> */}
-     {/* <Route path='/About' element={<About/>}/>
-     <Route path='/Skills'element={<Skills/>}/>
-     <Route path='/Contact' element={<Contact/>}/> */}
-     {/* </Routes>
-     </BrowserRouter> */}
      <Navbar />
 
      <section id="Home">

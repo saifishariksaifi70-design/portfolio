@@ -1,5 +1,5 @@
 import React, { useEffect }  from 'react'
-import Frontend from '../../../public/Frontend.png'
+import Frontend from '../../assets/Frontend.png'
 import Backend from '../../../src/assets/Backend.png'
 import Tool from '../../../src/assets/Tools.png'
 import reactImage from '../../assets/React.png'
