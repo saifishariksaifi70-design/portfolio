@@ -59,7 +59,7 @@ const About = () => {
 
 <div className='px-2 border-2 border-gray-800 rounded-2xl text-gray-300'>
   <div className='flex gap-2 items-center'>
-  <img src={Name} alt="" className='w-10 h-10 ' />
+  <img src={Name} alt="" className='w-10 h-10' />
   <p></p>
   <h4 className=''>Sharik Saifi</h4>
   </div>

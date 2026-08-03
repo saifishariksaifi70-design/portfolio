@@ -12,6 +12,7 @@ import Email from '../assets/email-2.png'
 import Performance from '../assets/rocket.png'
 import Responsive from '../assets/responsive.png'
 import Layer from '../assets/layers.png'
+import { FaDownload } from 'react-icons/fa'
 
 const Home = ({ Line1, Line2, Line3, imageIcon }) => {
   return (
@@ -52,13 +53,14 @@ const Home = ({ Line1, Line2, Line3, imageIcon }) => {
         hover: transition-all
          scale-105
          '>
-          <a href="#Projectsd" className='flex items-center gap-1 font-bold'>View Project <img src={imageIcon} alt="" className='w-8 h-8' />
+          <a href="#Projects" className='flex items-center gap-1 font-bold'>View Project <img src={imageIcon} alt="" className='w-8 h-8' />
           </a>
         </button>
         <button className='flex mt-8 px-4 py-2 border-2 rounded-2xl border-blue-900
         hover: transition-all scale-105'>
-          <a href={Resume3} className='flex items-center gap-1 font-bold'>
-            <img src={Cv} alt="" className='w-8 h-8' />Download CV
+          <a href={Resume3} className='flex items-center gap-1 font-bold'
+          target="_blank" rel="noopener noreferrer">
+            <FaDownload size={20}/>Download CV
           </a>
         </button>
         </motion.div> <br />

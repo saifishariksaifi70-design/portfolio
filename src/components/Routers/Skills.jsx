@@ -106,9 +106,9 @@ const Skills = () => {
       </div>
       <br /><br /><br />
      
-      <div className='flex justify-center items-center gap-5 flex flex-col md:flex-row'>
+      <div className='flex justify-center items-center gap-5 flex-col md:flex-row'>
         <button className='border-b-2 rounded-2xl w-32 h-10 
-        text-white font-bold
+        text-white font-bold cursor-pointer
         hover:scale-105
     transition-all
     duration-500
@@ -117,7 +117,7 @@ const Skills = () => {
           <span className='text-black-500'>Frontend</span>
           </button>
         <button className='border-b-2 rounded-2xl w-32 h-10
-        text-white font-bold 
+        text-white font-bold cursor-pointer
         hover:scale-105
     transition-all
     duration-500
@@ -125,7 +125,7 @@ const Skills = () => {
           <span className='text-black-500'>Backend</span>
           </button>
         <button className='border-b-2 rounded-2xl w-32 h-10
-        text-white font-bold
+        text-white font-bold cursor-pointer
         hover:scale-105
     transition-all
     duration-500
