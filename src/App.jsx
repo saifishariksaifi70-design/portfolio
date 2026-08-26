@@ -23,9 +23,9 @@ function App() {
      <section id="Home">
       <Home imageProp={Image1}
      imageIcon={arrowRight} 
-     Line1="Frontend Developer passionate about building modern,"
-     Line2="responsive, and user-friendly websites using"
-     Line3="React.js, JavaScript, and Tailwind CSS."
+    Line1="Full Stack Developer passionate about building modern,"
+    Line2="scalable web applications using the MERN Stack and AI,"
+    Line3="with a focus on performance, clean code, and great user experience."
      />
      </section>
      <section id='About'>

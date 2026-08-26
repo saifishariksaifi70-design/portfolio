@@ -1,8 +1,6 @@
 import React, { useEffect } from 'react'
-import image2 from '../../../src/my image.png'
 // import { Link } from 'react-router-dom'
 import Resume2 from '../../assets/Sharik_Saifi_Resume.pdf'
-import Image from '../../../src/my image.png'
 import About1 from '../../assets/About1.png'
 import Name from '../../assets/name.png'
 import User from '../../assets/user.png'
@@ -15,157 +13,482 @@ import Responsive from '../../assets/responsive.png'
 import Performance from '../../assets/rocket.png'
 import Problem from '../../assets/light.png'
 import { motion } from 'framer-motion'
-import { MdOpacity } from 'react-icons/md'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
 const About = () => {
 
-  useEffect(()=>{
+  useEffect(() => {
     AOS.init({
-      duration : 1000,
-      once : false
+      duration: 1000,
+      once: false
     })
-  },[])
+  }, [])
+
   return (
-    <div className='py-10 bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950 text-white' data-aos="zoom-in">
+
+    <div
+      className='min-h-screen py-10 px-4 sm:px-6 md:px-10 lg:px-16
+      bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950
+      text-white overflow-hidden'
+      data-aos='zoom-in'
+    >
+
+      {/* Heading */}
+
       <br />
-      <h3 className='text-center text-sky-600 text-2xl'>Get To Know me</h3>
-      <h1 className='text-4xl text-center font-bold'>About 
-        <span className='text-sky-500'> Me.</span></h1><br /><br />
-        <div className='flex gap-8 h-scr flex-col lg:flex-row items-center justify-center'>
-        <div className="mx-16 px-3 py-3 relative max-w-80 justify-center items-center border-2 border-gray-900 rounded-2xl
-        flex-col md:flex-row sm:flex-row">
 
-  {/* Blue Glow Circle */}
-  <div className="absolute w-72 h-72 sm:h-60 sm:w-60 items-center justify-center rounded-full border-4 border-blue-500 shadow-[0_0_60px_#3b82f6]"></div>
+      <h3 className='text-center text-sky-600 text-xl sm:text-2xl'>
+        Get To Know me
+      </h3>
 
-  {/* Blur Glow */}
-  <div className="absolute w-80 h-80 sm:w-72 sm:h-72 rounded-full bg-blue-500/20 blur-3xl"></div>
+      <h1 className='text-3xl sm:text-4xl text-center font-bold mt-2'>
+        About
+        <span className='text-sky-500'>
+          {' '}Me.
+        </span>
+      </h1>
 
-  {/* Profile Image */}
-  <motion.img
-    src={About1}
-    alt=""
-    className="relative z-10 w-72"
-    initial={{ opacity : 0, x : -100}}
-    whileInView={{ opacity : 1 , x : 0 }}
-    transition={{duration : 0.8}}
-    viewport={{ once : false}}
-
-  />
+      <br />
+      <br />
 
 
+      {/* Main Container */}
 
-<div className='px-2 border-2 border-gray-800 rounded-2xl text-gray-300'>
-  <div className='flex gap-2 items-center'>
-  <img src={Name} alt="" className='w-10 h-10' />
-  <p></p>
-  <h4 className=''>Sharik Saifi</h4>
-  </div>
-  <hr  className='text-blue-900'/>
-   <div className='flex gap-2 items-center'>
-  <img src={User} alt="" className='w-10 h-10' />
-  <p></p>
-  <h4 className=''>Frontend Developer</h4>
-  </div>
-  <hr  className='text-blue-900'/>
-   <div className='flex gap-2 items-center'>
-  <img src={Email} alt="" className='w-10 h-10' />
-  <p></p>
-  <h4 className=''>saifishariksaifi70@gmail.com</h4>
-  </div>
-  <hr  className='text-blue-900'/>
-   <div className='flex gap-2 items-center'>
-  <img src={Location1} alt=""  className='w-10 h-10'/>
-  <p></p>
-  <h4 className=''>Faridabad</h4>
-  </div>
-  <hr  className='text-blue-900'/><br />
-  </div>
-  <br />
-  </div> <br /><br />
-  <div className='max-w-105 rounded-2xl px-3'>
-    <div className=''>
-      <h1 className='text-4xl font-bold'>Hi, I'm 
-        <span className='bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent'> Sharik</span>👋</h1><br />
-      <p className='text-gray-400'>Hi, I'm Sarik, a passionate Frontend Developer currently learning MERN Stack with AI. 
-        I have a strong interest in web development and enjoy building modern, 
-        responsive websites using HTML, CSS, JavaScript, and React.js. 
-        I am continuously improving my skills through projects and hands-on practice. 
-        My goal is to build innovative AI-powered applications and establish my own identity in the tech industry.</p><br />
-        <div className='flex'>
-          <div className='flex gap-3'>
-          
-          <button className='font-bold px-3 py-1 border-2 border-sky-400 rounded-2xl h-10 w-48  
-          bg-gradient-to-r from-blue-600 to-sky-600'>
-            
-            <a href={Resume2} className='flex items-center gap-2'>
-              <img src={CV} alt="" className='w-8 h-8' />
-            <h1>Download CV</h1> </a>
-            
-          
-          </button>
-        
-          
-          <button className='flex font-bold border-2 border-gray-800 px-5 py-1 rounded-2xl h-10 w-40 gap-3'>
-            <img src={hire} alt=""  className='w-8 h-8'/>
-            <h1>Hire Me</h1>
-          </button>
+      <div
+        className='max-w-7xl mx-auto flex flex-col
+        lg:flex-row gap-10 lg:gap-8
+        items-center justify-center'
+      >
+
+
+        {/* PROFILE CARD */}
+
+        <div
+          className='w-full sm:w-[400px] max-w-full
+          px-3 py-3 relative
+          border-2 border-gray-900
+          rounded-2xl
+          flex flex-col items-center
+          mx-auto'
+        >
+
+          {/* Blue Glow Circle */}
+
+          <div
+            className='absolute
+            w-[250px] h-[250px]
+            sm:w-[280px] sm:h-[280px]
+            md:w-[300px] md:h-[300px]
+            rounded-full
+            border-4 border-blue-500
+            shadow-[0_0_60px_#3b82f6]'
+          >
           </div>
-     
-        
-        </div><br />
-        
-    </div>
-    
-    
+
+
+          {/* Blur Glow */}
+
+          <div
+            className='absolute
+            w-[260px] h-[260px]
+            sm:w-[300px] sm:h-[300px]
+            rounded-full
+            bg-blue-500/20
+            blur-3xl'
+          >
+          </div>
+
+
+          {/* Profile Image */}
+
+          <motion.img
+            src={About1}
+            alt='About'
+            className='relative z-10
+            w-[240px]
+            sm:w-[280px]
+            md:w-[300px]
+            object-contain'
+            initial={{
+              opacity: 0,
+              x: -100
+            }}
+            whileInView={{
+              opacity: 1,
+              x: 0
+            }}
+            transition={{
+              duration: 0.8
+            }}
+            viewport={{
+              once: false
+            }}
+          />
+
+
+          {/* Personal Details */}
+
+          <div
+            className='relative z-20
+            w-full
+            px-2 sm:px-3
+            border-2 border-gray-800
+            rounded-2xl
+            text-gray-300
+            bg-slate-950/50
+            backdrop-blur-sm'
+          >
+
+            {/* Name */}
+
+            <div className='flex gap-2 items-center py-2'>
+
+              <img
+                src={Name}
+                alt='Name'
+                className='w-9 h-9 sm:w-10 sm:h-10 object-contain'
+              />
+
+              <h4 className='text-sm sm:text-base'>
+                Sharik Saifi
+              </h4>
+
+            </div>
+
+            <hr className='border-gray-800' />
+
+
+            {/* User */}
+
+            <div className='flex gap-2 items-center py-2'>
+
+              <img
+                src={User}
+                alt='User'
+                className='w-9 h-9 sm:w-10 sm:h-10 object-contain'
+              />
+
+              <h4 className='text-sm sm:text-base'>
+                Frontend Developer
+              </h4>
+
+            </div>
+
+            <hr className='border-gray-800' />
+
+
+            {/* Email */}
+
+            <div className='flex gap-2 items-center py-2'>
+
+              <img
+                src={Email}
+                alt='Email'
+                className='w-9 h-9 sm:w-10 sm:h-10 object-contain'
+              />
+
+              <h4 className='text-xs sm:text-sm break-all'>
+                saifishariksaifi70@gmail.com
+              </h4>
+
+            </div>
+
+            <hr className='border-gray-800' />
+
+
+            {/* Location */}
+
+            <div className='flex gap-2 items-center py-2'>
+
+              <img
+                src={Location1}
+                alt='Location'
+                className='w-9 h-9 sm:w-10 sm:h-10 object-contain'
+              />
+
+              <h4 className='text-sm sm:text-base'>
+                Faridabad
+              </h4>
+
+            </div>
+
+          </div>
+
+          <br />
+
+        </div>
+
+
+        {/* ABOUT CONTENT */}
+
+        <div
+          className='w-full max-w-2xl
+          rounded-2xl px-2 sm:px-4 md:px-6'
+        >
+
+          <h1 className='text-3xl sm:text-4xl md:text-5xl font-bold'>
+
+            Hi, I'm
+
+            <span
+              className='bg-gradient-to-r
+              from-blue-500 to-purple-600
+              bg-clip-text text-transparent'
+            >
+              {' '}Sharik
+            </span>
+
+            👋
+
+          </h1>
+
+          <br />
+
+
+          {/* Description */}
+
+          <p
+            className='text-gray-400
+            text-sm sm:text-base
+            leading-7'
+          >
+
+          Hi, I'm Sharik, a passionate Full Stack Developer with a strong
+          interest in building modern and scalable web applications.
+          I specialize in the MERN Stack and enjoy creating responsive,
+          interactive, and user-friendly digital experiences.
+          I continuously enhance my skills through real-world projects
+          and hands-on development. My goal is to combine Full Stack
+          development with AI to build innovative and impactful applications.
+
+          </p>
+
+          <br />
+
+
+          {/* Buttons */}
+
+          <div className='flex flex-col sm:flex-row gap-4'>
+
+            {/* Download CV */}
+
+            <button
+              className='font-bold
+              px-3 py-1
+              border-2 border-sky-400
+              rounded-2xl
+              min-h-11
+              w-full sm:w-48
+              bg-gradient-to-r
+              from-blue-600 to-sky-600
+              hover:scale-105
+              transition-all duration-300'
+            >
+
+              <a
+                href={Resume2}
+                target='_blank'
+                rel='noopener noreferrer'
+                className='flex items-center
+                justify-center gap-2'
+              >
+
+                <img
+                  src={CV}
+                  alt='CV'
+                  className='w-8 h-8 object-contain'
+                />
+
+                <h1>
+                  Download CV
+                </h1>
+
+              </a>
+
+            </button>
+
+
+            {/* Hire Me */}
+
+            <button
+              className='flex
+              items-center
+              justify-center
+              font-bold
+              border-2 border-gray-800
+              px-5 py-1
+              rounded-2xl
+              min-h-11
+              w-full sm:w-40
+              gap-3
+              hover:border-sky-500
+              hover:bg-sky-500/10
+              hover:scale-105
+              transition-all duration-300'
+            >
+
+              <img
+                src={hire}
+                alt='Hire'
+                className='w-8 h-8 object-contain'
+              />
+
+              <h1>
+                Hire Me
+              </h1>
+
+            </button>
+
+          </div>
+
+          <br />
+
+        </div>
+
+
+        {/* Desktop Divider */}
+
+        <div
+          className='hidden lg:block
+          border-r-2 border-gray-800
+          h-80'
+        >
+        </div>
+
+
+        {/* FEATURES */}
+
+        <motion.div
+          className='w-full lg:w-64'
+          initial={{
+            opacity: 0,
+            x: 100
+          }}
+          whileInView={{
+            opacity: 1,
+            x: 0
+          }}
+          transition={{
+            duration: 0.8
+          }}
+          viewport={{
+            once: false
+          }}
+        >
+
+          {/* Clean Code */}
+
+          <div className='flex gap-4 items-start'>
+
+            <img
+              src={Goal}
+              alt='Clean Code'
+              className='w-8 h-8 flex-shrink-0'
+            />
+
+            <div>
+
+              <h1 className='font-bold text-lg'>
+                Clean Code
+              </h1>
+
+              <p className='text-gray-400 text-sm leading-6'>
+                I write clean, readable and efficient code.
+              </p>
+
+            </div>
+
+          </div>
+
+          <br />
+
+
+          {/* Responsive Design */}
+
+          <div className='flex gap-4 items-start'>
+
+            <img
+              src={Responsive}
+              alt='Responsive Design'
+              className='w-8 h-8 flex-shrink-0'
+            />
+
+            <div>
+
+              <h1 className='font-bold text-lg'>
+                Responsive Design
+              </h1>
+
+              <p className='text-gray-400 text-sm leading-6'>
+                I build website that look great on all devices
+              </p>
+
+            </div>
+
+          </div>
+
+          <br />
+
+
+          {/* Performance */}
+
+          <div className='flex gap-4 items-start'>
+
+            <img
+              src={Performance}
+              alt='Performance'
+              className='w-8 h-8 flex-shrink-0'
+            />
+
+            <div>
+
+              <h1 className='font-bold text-lg'>
+                Performance
+              </h1>
+
+              <p className='text-gray-400 text-sm leading-6'>
+                I optimize website for speed and performance.
+              </p>
+
+            </div>
+
+          </div>
+
+          <br />
+
+
+          {/* Problem Solving */}
+
+          <div className='flex gap-4 items-start'>
+
+            <img
+              src={Problem}
+              alt='Problem Solving'
+              className='w-8 h-8 flex-shrink-0'
+            />
+
+            <div>
+
+              <h1 className='font-bold text-lg'>
+                Problem Solving
+              </h1>
+
+              <p className='text-gray-400 text-sm leading-6'>
+                I enjoy solving Problems and building solution.
+              </p>
+
+            </div>
+
+          </div>
+
+          <br />
+
+        </motion.div>
+
+      </div>
 
     </div>
-    <div className="border-r-2 border-gray-800 h-80"></div>
-    <motion.div className='gap-5 w-60'
-    initial={{MdOpacity : 0 , x : 100}}
-    whileInView={{MdOpacity : 1 , x : 0}}
-    transition={{duration : 0.8}}
-    viewPort={{ once : false}}>
-       <div className='flex gap-5'
-       >
-       <img src={Goal} alt="" className='w-8 h-8' />
-        <motion.div 
-        initial={{ x : -100}}
-    animate={{ x : 0}}
-    transition={{duration : 1}}>
-          <h1 className='font-bold'>Clean Code</h1>
-          <p>I write clean, readable and efficient code.</p>        
-      </motion.div>
-      </div><br />
-    <div className='flex gap-5'>
-        <img src={Responsive} alt="" className='w-8 h-8' />
-        <div className=''>
-          <h1 className='font-bold items-center'>Responsive Design</h1>
-          <p>I build website that look great on all devices</p>        
-      </div>
-      </div><br />
-      <div className='flex gap-5'>
-       <img src={Performance} alt="" className='w-8 h-8' />
-        <div>
-          <h1 className=' font-bold'>Performance</h1>
-          <p>I optimize website for speed and performance.</p>        
-      </div>
-      </div><br />
-      <div className='flex gap-5'>
-       <img src={Problem} alt="" className='w-8 h-8'/>
-        <div>
-          <h1 className='font-bold'>Problem Solving</h1>
-          <p>I enjoy solving Problems and building solution.</p>        
-      </div>
-      </div><br />
-     
-      </motion.div>
-
-  </div>
-  </div>
-  
   )
 }
 
