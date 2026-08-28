@@ -15,6 +15,8 @@ import Problem from '../../assets/light.png'
 import { motion } from 'framer-motion'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import { FaLocationDot, FaUser } from 'react-icons/fa6'
+import { FaEnvelope, FaUserAlt } from 'react-icons/fa'
 
 const About = () => {
 
@@ -142,13 +144,9 @@ const About = () => {
 
             {/* Name */}
 
-            <div className='flex gap-2 items-center py-2'>
+            <div className='flex gap-3 items-center py-2'>
 
-              <img
-                src={Name}
-                alt='Name'
-                className='w-9 h-9 sm:w-10 sm:h-10 object-contain'
-              />
+              <FaUserAlt size={25} className='object-contain'/>
 
               <h4 className='text-sm sm:text-base'>
                 Sharik Saifi
@@ -161,16 +159,12 @@ const About = () => {
 
             {/* User */}
 
-            <div className='flex gap-2 items-center py-2'>
+            <div className='flex gap-3 items-center py-2'>
 
-              <img
-                src={User}
-                alt='User'
-                className='w-9 h-9 sm:w-10 sm:h-10 object-contain'
-              />
+              <FaUser size={25}  className='object-contain text-white/60'/>
 
               <h4 className='text-sm sm:text-base'>
-                Frontend Developer
+                Software Developer
               </h4>
 
             </div>
@@ -180,13 +174,9 @@ const About = () => {
 
             {/* Email */}
 
-            <div className='flex gap-2 items-center py-2'>
+            <div className='flex gap-3 items-center py-2'>
 
-              <img
-                src={Email}
-                alt='Email'
-                className='w-9 h-9 sm:w-10 sm:h-10 object-contain'
-              />
+            <FaEnvelope size={25} className='object-contain text-white/60'/>
 
               <h4 className='text-xs sm:text-sm break-all'>
                 saifishariksaifi70@gmail.com
@@ -199,13 +189,9 @@ const About = () => {
 
             {/* Location */}
 
-            <div className='flex gap-2 items-center py-2'>
+            <div className='flex gap-3 items-center py-2'>
 
-              <img
-                src={Location1}
-                alt='Location'
-                className='w-9 h-9 sm:w-10 sm:h-10 object-contain'
-              />
+             <FaLocationDot size={25} className='object-contain' />
 
               <h4 className='text-sm sm:text-base'>
                 Faridabad

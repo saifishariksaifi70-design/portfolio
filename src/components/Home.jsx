@@ -11,6 +11,8 @@ import Responsive from '../assets/responsive.png'
 import Layer from '../assets/layers.png'
 import { FaDownload } from 'react-icons/fa'
 
+
+
 const Home = ({ Line1, Line2, Line3, imageIcon }) => {
   return (
     <div className='h-auto min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950 text-white overflow-hidden'>
@@ -202,7 +204,7 @@ const Home = ({ Line1, Line2, Line3, imageIcon }) => {
             md:w-[400px] md:h-[400px]
             lg:w-[450px] lg:h-[450px]
             rounded-full
-            border-4 border-blue-500
+            border-1 border-blue-500
             shadow-[0_0_60px_#3b82f6]'
           >
           </div>

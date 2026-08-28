@@ -3,6 +3,7 @@ import Weather from '../../assets/Weather.png'
 import IncomeTracker from '../../assets/Income.png'
 import Portfolio from '../../assets/Portfolio.png'
 import Git from '../../assets/github.png'
+import ecomerce from '../../assets/E-commerce.png'
 
 import {
   FaArrowRight,
@@ -635,6 +636,190 @@ const Projects = () => {
           </div>
 
         </div>
+        {/* ================================================= */}
+        {/* E-commerce */}
+        {/* ================================================= */}
+
+        <div
+          className='
+          w-full
+          overflow-hidden
+          border
+          border-gray-600
+          rounded-2xl
+          hover:scale-[1.02]
+          sm:hover:scale-105
+          transition-all
+          duration-500
+          bg-slate-950/30'
+        >
+
+          <img
+            src={ecomerce}
+            alt='My Portfolio'
+            className='
+            w-full
+            h-52
+            sm:h-48
+            md:h-52
+            object-cover'
+          />
+
+
+          <div className='px-3 sm:px-4 py-4'>
+
+            <h1
+              className='
+              text-2xl
+              sm:text-3xl
+              md:text-4xl
+              text-white/60
+              font-semibold'
+            >
+              E-Commerce
+            </h1>
+
+            <p
+              className='
+              text-white/40
+              text-sm
+              sm:text-base
+              py-2
+              leading-6'
+            >
+             A modern and fully responsive E-commerce website built with React.js, 
+             featuring product browsing, search & filtering, product details, and a 
+             smooth shopping cart experience. The project focuses on clean UI, 
+             reusable components, and a seamless user experience across all devices.
+            </p>
+
+          </div>
+
+
+          {/* Technologies */}
+
+          <div
+            className='
+            flex
+            flex-wrap
+            gap-2
+            px-3 sm:px-4
+            py-3'
+          >
+
+            <span
+              className='
+              text-blue-300
+              border
+              border-blue-900
+              rounded-lg
+              px-3
+              py-1
+              text-xs
+              sm:text-sm'
+            >
+              React.JS
+            </span>
+
+            <span
+              className='
+              text-blue-300
+              border
+              border-blue-900
+              rounded-lg
+              px-3
+              py-1
+              text-xs
+              sm:text-sm'
+            >
+              TailwindCSS
+            </span>
+
+            <span
+              className='
+              text-blue-300
+              border
+              border-blue-900
+              rounded-lg
+              px-3
+              py-1
+              text-xs
+              sm:text-sm'
+            >
+              API
+            </span>
+            <span
+              className='
+              text-blue-300
+              border
+              border-blue-900
+              rounded-lg
+              px-3
+              py-1
+              text-xs
+              sm:text-sm'
+            >
+              Context APi
+            </span>
+
+          </div>
+
+
+          {/* Links */}
+
+          <div
+            className='
+            flex
+            justify-between
+            items-center
+            px-3 sm:px-5
+            border-t
+            border-gray-600
+            py-3'
+          >
+
+            <a
+              href='https://e-commerce-iota-three-29.vercel.app/'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='hover:text-sky-400 transition'
+            >
+
+              <div className='flex gap-2 items-center'>
+
+                <h1 className='text-blue-500 text-sm sm:text-base'>
+                  Live Demo
+                </h1>
+
+                <FaExternalLinkAlt size={13} />
+
+              </div>
+
+            </a>
+
+
+            <a
+              href='https://github.com/saifishariksaifi70-design/E-commerce'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='hover:text-sky-400 transition'
+            >
+
+              <div className='flex gap-2 items-center'>
+
+                <h1 className='text-blue-500 text-sm sm:text-base'>
+                  GitHub
+                </h1>
+
+                <FaExternalLinkAlt size={13} />
+
+              </div>
+
+            </a>
+
+          </div>
+
+        </div>
 
       </div>
 
@@ -682,6 +867,7 @@ const Projects = () => {
 
 
     </div>
+    
   )
 }
 
